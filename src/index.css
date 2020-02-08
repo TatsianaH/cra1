@@ -5,25 +5,37 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
 }
 header {
-  background-color:  cadetblue;
+  background-color: cadetblue;
+  text-align: center;
 }
 
 footer {
   background-color: cadetblue;
+  text-align: center;
 }
+
 .logo{
-  background-color: darkblue;
   display: inline-block;
-  color: #282c34;
   float: left;
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  margin-right: 50px;
+  margin-left: 0;
+  padding: 0;
+  border: 0;
 }
 
 .container {
-  max-width: 960px;
+  max-width: 100%;
   margin: 0 auto;
+  text-align: center;
+  display: flex;
 }
+
 header nav {
 display: inline-block;
   margin-left: 10px;
@@ -32,16 +44,36 @@ display: inline-block;
 header nav ul {
   padding: 0;
   list-style-type: none;
-  margin: 0;
+  margin: 0 auto;
+  text-align: center;
 }
 
 header nav ul li {
   float: left;
   margin-right: 30px;
-
 }
 
 main {
 padding-top: 50px;
   padding-bottom: 50px;
+  text-align: center;
+  flex: auto;
+  flex-direction: column;
+  line-height: 1.8;
+  font-size: 15px;
+  font-style: italic;
+  height: 500px;
+}
+
+img {
+  padding: 1px;
+  width: 100px;
+  display: inline-block;
+  float: left;
+  vertical-align: middle;
+}
+
+.txtlink {
+  font-size: 25px;
+  color: darkblue;
 }

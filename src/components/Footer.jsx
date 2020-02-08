@@ -7,9 +7,8 @@ function Footer() {
       <footer>
           <div className="container">
               <Logo/>
-              Footer
+              Version 0.0.1 © 2020
           </div>
-
       </footer>
   );
 }
