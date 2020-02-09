@@ -1,11 +1,11 @@
 import React from 'react';
 import '../App.css';
-import myLogo from '../logo192.png';
+import myLogo from '../logo.png';
 
 function Logo() {
   return (
       <div className="logo">
-        <img src={myLogo} />
+        <img src={myLogo} alt="Logo icon" className="logoPic"/>
       </div>
   );
 }

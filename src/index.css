@@ -5,16 +5,32 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: flex;
+  height: 100vh
 }
 header {
-  background-color: cadetblue;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  background-color: indigo;
   text-align: center;
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 footer {
-  background-color: cadetblue;
-  text-align: center;
+  background-color: indigo;
+  text-align: justify;
+  color: coral;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .logo{
@@ -30,15 +46,18 @@ footer {
 }
 
 .container {
-  max-width: 100%;
+  left: 0;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   display: flex;
+  margin: 0;
 }
 
 header nav {
 display: inline-block;
-  margin-left: 10px;
+  width: 960px;
+  margin: 0 auto;
 }
 
 header nav ul {
@@ -62,18 +81,26 @@ padding-top: 50px;
   line-height: 1.8;
   font-size: 15px;
   font-style: italic;
-  height: 500px;
+  height: 77vh
 }
 
-img {
+.txtlink {
+  font-size: 25px;
+  color: indianred;
+}
+
+.logoPic {
+  left: 0;
   padding: 1px;
   width: 100px;
   display: inline-block;
   float: left;
   vertical-align: middle;
 }
-
-.txtlink {
-  font-size: 25px;
-  color: darkblue;
+.girlPic {
+  padding: 1px;
+  width: 300px;
+  display: inline-block;
+  float: left;
+  vertical-align: baseline;
 }

@@ -2,14 +2,11 @@ import React from 'react';
 import '../App.css';
 import MenuItem from "./MenuItem";
 
-function Menu() {
+function Menu(props) {
   return (
       <nav>
           <ul>
-              <MenuItem/>
-              <MenuItem/>
-              <MenuItem/>
-              <MenuItem/>
+              {props.menuItems.map(el => <MenuItem  key={el.text} menuItem ={el}/>)}
           </ul>
       </nav>
   );
