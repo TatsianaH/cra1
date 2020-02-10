@@ -6,7 +6,7 @@ function Menu(props) {
   return (
       <nav>
           <ul>
-              {props.menuItems.map(el => <MenuItem  key={el.text} menuItem ={el}/>)}
+              {props.menuItems.map(el => <MenuItem  key={el.text} menuItem={el}/>)}
           </ul>
       </nav>
   );
