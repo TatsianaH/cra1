@@ -3,9 +3,12 @@ import '../App.css';
 
 function Menu3(props) {
 return (
-    <p>
-        {props.textStory}
-    </p>
+    <div className="textBox">
+        <p>
+            {props.textStory}
+        </p>
+    </div>
+
 );
 }
 

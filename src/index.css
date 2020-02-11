@@ -71,6 +71,19 @@ header nav ul li {
   margin-right: 30px;
 }
 
+footer nav ul {
+  list-style-type: none;
+  float: left;
+  margin-right: 20px;
+  font-size: 10px;
+}
+footer p {
+  text-align: right;
+  margin-right: 0;
+  right: 0;
+  display: inline-block;
+}
+
 main {
 padding-top: 100px;
   padding-bottom: 50px;
@@ -102,4 +115,11 @@ padding-top: 100px;
   display: inline-block;
   float: left;
   vertical-align: baseline;
+}
+
+.textBox {
+  box-sizing: border-box;
+  width: 300px;
+  height: 100px;
+  float: right;
 }
