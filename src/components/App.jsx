@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 import '../App.css';
 import Header from "./Header";
 import Footer from "./Footer";
 import Content from "./Content";
+import Counter from './Counter';
 
 const items = [
     {
@@ -44,11 +45,25 @@ const items2 = [
 ];
 const textStory = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.';
 
+const counter1 = 2, counter2 = 5;
+const totalCounter = counter1 + counter2;
 function App() {
+const [totalCount, setTotalCount] = useState(0);
+
+
+    function countChanges(value){
+        console.log('CLICKED' + value);
+        setTotalCount(value);
+    }
+
     return (
         <div className="App">
             <Header menuItems={items}/>
-            <Content/>
+            <Content />
+            Total: {totalCount}
+            <Counter startCount={counter1} countChanges={countChanges}/>
+            <hr/>
+            <Counter startCount={counter2} countChanges={countChanges}/>
             <Footer menuItems={items} items2={items2} textStory={textStory}/>
         </div>
     );
