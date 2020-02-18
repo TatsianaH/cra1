@@ -45,25 +45,25 @@ const items2 = [
 ];
 const textStory = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.';
 
-const counter1 = 2, counter2 = 5;
-const totalCounter = counter1 + counter2;
 function App() {
-const [totalCount, setTotalCount] = useState(0);
-
-
-    function countChanges(value){
-        console.log('CLICKED' + value);
-        setTotalCount(value);
-    }
+    const nums = [0, 0];
+    const sum = nums.reduce((a, b) => a + b);
+const [total, setTotal] = useState(sum);
+   const totalCount = (value) => {
+       setTotal(value + total);
+   };
 
     return (
         <div className="App">
             <Header menuItems={items}/>
             <Content />
-            Total: {totalCount}
-            <Counter startCount={counter1} countChanges={countChanges}/>
-            <hr/>
-            <Counter startCount={counter2} countChanges={countChanges}/>
+
+            Total: {total}
+
+            {nums.map(el =>
+            <Counter num={el} totalCount={totalCount}/>
+            )}
+
             <Footer menuItems={items} items2={items2} textStory={textStory}/>
         </div>
     );
