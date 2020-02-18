@@ -7,7 +7,6 @@ function Content(props) {
     let name = 'Initial';
 
     const clickButtonHandler = (value) => {
-        props.bc(name + value);
         console.log('Clicked!' + name);
     }
 
